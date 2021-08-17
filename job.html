@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>job</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="job">
+	<div class="job__input">
+		<input type="text" id="name" name="name" oninput="myName()" value=""  placeholder="имя">
+		<textarea type="text" id="text" name="text" oninput="myText()" value="" placeholder="конкурс"></textarea>
+		<input type="text" id="date" name="date" oninput="myDate()" value=""  placeholder="Дата">
+	</div>
+	<div class="job__img">
+		<img src="78.jpg">
+		<span id="ot-name">ИФО</span>
+		<span id="ot-text">Текст</span>
+		<span id="ot-date">.08.2021</span>
+	</div>
+</div>
+
+
+
+
+
+<script>
+	
+	function myName() {
+		var name = document.getElementById('name').value;
+		document.getElementById('ot-name').innerHTML = name;
+	}
+
+	function myText() {
+		var text = document.getElementById('text').value;
+		document.getElementById('ot-text').innerHTML = text;
+	}
+
+
+	function myDate() {
+		var date = document.getElementById('date').value;
+		document.getElementById('ot-date').innerHTML = date + ".08.2021";
+	}
+
+
+</script>
+
+<!-- 
+<p>Набирите произвольный текст:</p>
+<input type = "text" name = "testInput" id = "testInput" oninput = "testFunction()">
+<p id = "info" ></p>
+<script>
+function testFunction() {
+	var x = document.getElementById("testInput").value;
+	document.getElementById("info").innerHTML = "Вы набираете следующий текст: " + x;
+}
+</script> -->
+
+<!-- <script>
+
+	function jo() {
+
+	let name = document.getElementById('name').value;
+	// let konkurs = document.getElementById('konkurs').value;
+	let ot_name = document.getElementById('ot_name');	
+	// let ot_konkurs = document.getElementById('ot_konkurs');
+
+	ot_name.innerHTML; = name;
+	// ot_konkurs = konkurs;
+
+	
+
+
+	}
+	
+
+	
+</script> -->
+
+
+
+</body>
+</html>
